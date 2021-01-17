@@ -1,0 +1,58 @@
+{% load static %}
+<html>
+<head>
+    <style>
+        body
+        {
+            background:url({% static 'images/stock.jpg' %});
+            background-size: cover;
+        }
+        h1 {
+    display: table; /* keep the background color wrapped tight */
+    margin: 0px auto 0px auto; /* keep the table centered */
+    padding:5px;font-size:20px;background-color:white;color:#ffffff;
+               }
+        h3 {
+    display: table; /* keep the background color wrapped tight */
+    margin: 0px auto 0px auto; /* keep the table centered */
+    padding:5px;font-size:20px;background-color:lightcyan;color:#ffffff;
+               }
+        h2 {
+    display: table; /* keep the background color wrapped tight */
+    margin: 0px auto 0px auto; /* keep the table centered */
+    padding:5px;font-size:20px;background-color:white;color:#ffffff;
+               }
+
+
+    </style>
+</head>
+<body>
+<a href="home.html"></a>
+
+<h1><span><center><p style="color:black">Stock Market Pretiction</p></center></span></h1>
+
+<br>
+<br>
+<h3><center><pre style="color:black">A stock market, equity market or share market is the aggregation of buyers
+    and sellers of stocks (also called shares),
+    which represent ownership claims on businesses;
+    these may include securities listed on a public stock exchange,
+    as well as stock that is only traded privately, such as shares of private companies
+    which are sold to investors through equity crowdfunding platforms.
+    Investment in the stock market is most often done via stockbrokerages and electronic trading platforms.
+    Investment is usually made with an investment strategy in mind.</pre></center></h3>
+<br>
+<center><img src={% static "images/1.png"%} height="150" width="200" alt="Italian Trulli"></center>>
+<br>
+<td width="8%"><center><form method="get" action="login" style="font-size: 0px">
+    <button type="submit">Login</button>
+</form></center>></td>
+<td width="8%"><center><form method="get" action="register" style="font-size: 0px" >
+    <button type="submit">Register</button>
+</form></center>></td>
+
+{% block content %}
+{% endblock %}
+</body>
+
+</html>
